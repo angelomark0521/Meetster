@@ -15,13 +15,14 @@
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <%= link_to image_tag("logo.png", length:'250px', width:'125px'), root_path, class: "navbar-brand" %>
+          <%= link_to image_tag("logo.png", length:'350px', width:'200px'), root_path, class: "navbar-brand" %>
         </div>
 
 
 
         <ul class="nav navbar-nav navbar-right">
         <div class="col-md-4">
+          <br />
           <%= form_for "",url: events_path, role:"search", method: :get do %>
              <%= text_field_tag :search, @search_term,placeholder: "Search for events" %>
           <%end%>
